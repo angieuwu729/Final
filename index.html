@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FADADD" />
+  <title>Sanrio World - Ángela Espinosa</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg sticky-top bg-pink navbar-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Hello Kitty</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#personajes">Personajes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="container text-center py-4">
+  <img src="img/logopng.png" alt="Hello Kitty Logo" class="img-fluid logo-kitty" />
+  <h1 class="mt-3 text-pink">Mundo Sanrio</h1>
+</header>
+
+
+<section class="text-center hero-section">
+  <h2 class="text-pink">Bienvenida al mundo más adorable 🎀</h2>
+  <p class="lead">Descubre historia, personajes y magia kawaii.</p>
+  <a href="#personajes" class="btn btn-kitty mt-3">Ver personajes 💕</a>
+</section>
+
+<main class="container my-5">
+
+<section id="historia" class="mb-5 pastel-box">
+  <h2 class="text-center mb-4">Historia de Dulzura</h2>
+  <div class="timeline">
+    <div class="timeline-content">
+      <h5>1974</h5>
+      <p>Nace Hello Kitty en Londres.</p>
+    </div>
+    <div class="timeline-content">
+      <h5>1996</h5>
+      <p>Pompompurin se une a la familia Sanrio.</p>
+    </div>
+    <div class="timeline-content">
+      <h5>2001</h5>
+      <p>Cinnamoroll aparece flotando desde las nubes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="personajes" class="mb-5 pastel-box">
+  <h2 class="text-center mb-4">Amigos de Sanrio</h2>
+
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-pink active filter-btn" data-filter="all">Todos</button>
+    <button class="btn btn-outline-pink filter-btn" data-filter="dulce">Dulces</button>
+    <button class="btn btn-outline-pink filter-btn" data-filter="travieso">Curiosos</button>
+  </div>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-md-6 col-lg-4 char-item dulce">
+      <div class="card h-100 card-hover text-center p-3">
+        <img src="img/my-melody.png" class="mx-auto" style="width:120px;">
+        <h5 class="text-pink mt-3">My Melody</h5>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 char-item travieso">
+      <div class="card h-100 card-hover text-center p-3">
+        <img src="img/Chococat.jpeg" class="mx-auto" style="width:120px;">
+        <h5 class="text-pink mt-3">Chococat</h5>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 char-item dulce">
+      <div class="card h-100 card-hover text-center p-3">
+        <img src="img/cinnamoroll.png" class="mx-auto" style="width:120px;">
+        <h5 class="text-pink mt-3">Cinnamoroll</h5>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="video" class="mb-5 pastel-box">
+  <h2 class="text-center mb-4">Mundo de Hello Kitty</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/RFnLeeQyJmU" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="galeria" class="mb-5 pastel-box">
+  <h2 class="text-center mb-4">Galería</h2>
+  <div id="kittyCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner rounded">
+      <div class="carousel-item active">
+        <img src="img/mundohellokitty1.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/mundohellokitty2.jpeg" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="mb-5 pastel-box">
+  <h2 class="mb-4">Escríbele a Kitty 🎀</h2>
+  <form id="contactForm">
+    <input type="text" class="form-control mb-3" placeholder="Nombre" required>
+    <input type="email" class="form-control mb-3" placeholder="Email" required>
+    <textarea class="form-control mb-3" rows="3" placeholder="Mensaje" required></textarea>
+    <button type="submit" class="btn btn-kitty w-100">Enviar con Amor 💕</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="text-center bg-white p-4 border-top">
+  <p>Angela Nadin Espinosa – Diseño Multimedial – 2025</p>
+
+  <div class="mt-3">
+    <a href="https://www.instagram.com/sanrio/" target="_blank" class="text-pink mx-3 fs-3">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/Sanrio" target="_blank" class="text-pink mx-3 fs-3">
+      <i class="bi bi-facebook"></i>
+    </a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
